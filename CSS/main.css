@@ -4,33 +4,38 @@
     font-family: Helvetica;
     font-size: 18px;
     opacity: 0.9;
-    box-sizing:border-box;
+    box-sizing: border-box;
     text-align: center;
-    max-width: 1200px;;
+ 
+    ;
 }
-h2{
+
+h2 {
     font-size: 30px;
 }
-h3{
+
+h3 {
     font-size: 22px;
 }
-h4{
+
+h4 {
     font-size: 18px;
 }
 
 
+
 /*header and nav*/
 .header {
-    position: sticky;
+    position: fixed;
     top: 0;
-    height: 69px;
+    height: 10%;
     border-bottom: 1px solid seashell;
     display: flex;
     width: 100%;
     align-items: center;
     justify-content: space-between;
     flex-wrap: nowrap;
-    z-index:1;
+    z-index: 1;
     opacity: 1;
 }
 
@@ -39,37 +44,41 @@ h4{
     display: flex;
 }
 
-.nav{
+.nav {
     margin-right: 20px;
     flex-wrap: nowrap;
     display: flex;
 }
+
 .navlink {
     list-style: none;
     display: inline-flex;
-   padding-inline-start: 20px;
-   flex-wrap: nowrap;
-   min-width: 75px;
-   white-space: nowrap;
+    padding-inline-start: 20px;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+
 }
 
 /*Mission*/
-.mission{
-    position:relative;
-    top: 0px;
+.mission {
+    position: relative;
+  
     height: 700px;
     flex-basis: 1200px;
     background-image: url("../assets/img-mission-background.jpeg");
+    background-size:cover;
+    background-position: center;
     display: flex;
     align-items: center;
-
     background-color: transparent;
 }
-.missionblock{
+
+.missionblock {
     width: 100%;
     opacity: 1;
 }
-.missionheadline{
+
+.missionheadline {
     display: flex;
     justify-content: center;
     margin: 10px;
@@ -77,21 +86,28 @@ h4{
 
 
 /* Tea Of the Month*/
-.tea{
+.tea {
     margin: 0 auto;
+
 }
-.teaimages img{
+
+.tea h2{
+    margin-top: 70px;
+}
+.teaimages img {
     width: 300px;
     height: 200px;
 }
-.teaimages{
+
+.teaimages {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-.teablock{
+
+.teablock {
     width: 300px;
-    height:250px;
+    height: 250px;
     display: inline-flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -100,21 +116,24 @@ h4{
 }
 
 /*locations*/
-.locations{
+.locations {
     background-image: url("../assets/img-locations-background.jpeg");
     margin: 0 auto;
     flex-basis: 1200px;
     max-height: 775px;
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
+    background-size:cover;
+    background-position: center;
 }
 
-.locations h2{
+.locations h2 {
     background-color: transparent;
     margin-top: 10%;
 }
-.storeblock{
+
+.storeblock {
 
     background-color: transparent;
     opacity: 1;
@@ -123,31 +142,35 @@ h4{
 
 
 }
-.stores{
-   display: flex;
-   opacity: 1;
-   justify-content: center;
-   height:fit-content;
-   background-color: transparent;
-   flex-basis: 1200px;
-   flex-wrap: wrap;
+
+.stores {
+    display: flex;
+    opacity: 1;
+    justify-content: center;
+    height: fit-content;
+    background-color: transparent;
+    flex-basis: 1200px;
+    flex-wrap: wrap;
 }
 
-.store{
+.store {
     flex-basis: 300px;
     height: 200px;
     opacity: 1;
     align-items: center;
-    min-width: 200px;
+    min-width: 300px;
     margin: 10px;
- }
+}
 
- /*footer*/
- .footer{
+/*footer*/
+.footer {
     height: 200px;
- }
- .copyright{
+}
+
+.copyright {
     margin-left: 10px;
     display: flex;
     justify-content: flex-start;
- }
+    font-size: 10px;
+}
+
